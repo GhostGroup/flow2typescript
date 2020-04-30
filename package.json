@@ -1,13 +1,13 @@
 {
-  "name": "flow2typescript",
+  "name": "@ghostgroup/flow2typescript",
   "description": "Convert Flow source code to TypeScript",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "main": "./dist/src/index.js",
   "types": "./dist/src/index.d.ts",
   "bin": {
     "flow2typescript": "dist/src/cli.js"
   },
-  "repository": "git@github.com:benjie/flow2typescript.git",
+  "repository": "git@github.com:ghostgroup/flow2typescript.git",
   "author": "Benjie Gillam <code@benjiegillam.com>",
   "license": "MIT",
   "scripts": {
