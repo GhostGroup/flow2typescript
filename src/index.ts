@@ -11,7 +11,13 @@ export type Warning = [string, string, number, number];
 
 export async function compile(code: string, filename: string) {
   const parsed = parse(code, {
-    plugins: ['classProperties', 'flow', 'objectRestSpread'],
+    plugins: [
+      'classProperties',
+      'flow',
+      'objectRestSpread',
+      'optionalChaining',
+      'decorators-legacy'
+    ],
     sourceType: 'module'
   });
   let [warnings, ast] = await convert(parsed, code);
